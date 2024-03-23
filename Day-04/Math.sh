@@ -1,14 +1,40 @@
-# New Concept
-echo $RANDOM # it is a built in variable in Linux 
-# Range of RANDOM is (0 - 32767)
+# RunTime
+# ADD
+echo $((2 + 3))
 
-echo "$SHELL, $PED, $USER, $HOSTNAME"
+#SUB
+echo $((2 - 3))
 
-# Runtime (echo twitter="Elon Mask")
-echo $twitter
+#MULTI
+echo $((2 * 3))
 
-# nano GetRichQuick.sh
-echo "$twitter"
+#DIV
+echo $((2 % 3)) # reminder
+echo $((2 / 3)) # co-eff
 
-# compile 
-export twitter
+echo "What is your Name :"
+
+read name
+
+echo "How old are you"
+
+read age
+
+sleep 2
+
+echo "Calculating"
+sleep 1
+echo "***........"
+sleep 1
+echo "******....."
+sleep 1
+echo "*********.."
+sleep 1
+echo "***********"
+
+sleep 2
+echo $((( $RANDOM % 15 ) + $age ))
+
+sleep 2
+
+echo "$name, you will become a millionare when you are $age years old."
